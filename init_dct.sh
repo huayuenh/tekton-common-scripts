@@ -76,5 +76,6 @@ echo "RUNNING ADD SCRIPT FOR $i";
 DEVOPS_SIGNER=$i
 # Restore root & repository keys
 echo "Restoring keys from $VAULT_INSTANCE"
-source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/add_signer.sh")
+#source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/add_signer.sh")
+source <(curl -sSL "https://raw.githubusercontent.com/huayuenh/tekton-common-scripts/master/add_signer.sh")
 done
